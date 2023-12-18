@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Learning 3 : Form ศิษย์เก่า</title>
+</head>
+<body>
+    <h1>รายชื่อนักศึกษา</h1>
+    <ol>
+        <li>008 นางสาวจารุณี มณีจันทร์สุข</li>
+        <li>024 นางสาวธวัลรัตน์ อึ๋งพาณิชย์</li>
+    </ol>
+    <h1>แบบฟอร์มลงทะเบียนศิษย์เก่า IT + IS</h1>
+    <form action="">
+        <label for="name">ชื่อ-สกุล : </label>
+        <input type="text" name="username" placeholder="กรุณากรอกชื่อและนามสกุล" maxlength="50"/>
+        <br/>
+        <br/>
+
+        <label for="password">รหัสนักศึกษา : </label>
+        <input type="text" name="password" placeholder="กรุณากรอกรหัสนักศึกษา" maxlength="10"/>
+        <br/>
+        <br/>
+
+        <label for="gender">เพศ : </label>
+        <input type="radio" name="gender" value="1"/> ผู้ชาย
+        <input type="radio" name="gender" value="2"/> ผู้หญิง
+        <input type="radio" name="gender" value="9"/> LGBT+
+        <br/>
+        <br/>
+
+        <label for="date">ปีการศึกษาที่เข้าศึกษา : </label>
+        <input type="text" name="date" placeholder="กรุณากรอกปีการศึกษา" maxlength="4"/>
+        <br/>
+        <br/>
+
+        <label for="address">ที่อยู่ : </label>
+        <textarea name="address" cols="30" rows="10"></textarea>
+        <br />
+        <br/>
+
+        <label for="email">อีเมลล์ : </label>
+        <input type="email" name="email" size="16" maxlength="50"/>
+        <br />
+        <br/>
+
+        <label for="phonenumber">เบอร์โทรติดต่อ : </label>
+        <input type="phonenumber" name="phonenumber" size="16" maxlength="10"/>
+        <br />
+        <br/>
+
+        <label for="course">หลักสูตร : </label>
+        <input type="radio" name="course" value="1"/> IT
+        <input type="radio" name="course" value="2"/> IS
+        <br/>
+        <br/>
+
+        <label for="job">อาชีพปัจจุบัน : </label>
+        <input type="job" name="job" size="16" maxlength="50"/>
+        <br />
+        <br/>
+
+        <label for="job1">สถานที่ทำงาน : </label>
+        <input type="job1" name="job1" size="16" maxlength="50" placeholder="ระบุชื่อบริษัทและที่อยู่"/>
+        <br />
+        <br/>
+
+        <label for="job2">ระบุประเภทงานที่ทำ : </label>
+        <select name="job2" >
+            <option value="1">Web Developer</option>
+            <option value="2">SA</option>
+            <option value="3">Graphic Design</option>
+            <option value="4">Digital Marketing</option>
+        </select>
+        <br />
+        <br/>
+
+        <label for="profilepic">อัพโหลดรูปถ่ายตนเอง 1 รูป : </label>
+        <input type="file" name="profilepic">
+        <br />
+        <br/>
+
+    </form>
+</body>
+</html>
